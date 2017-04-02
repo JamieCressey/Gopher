@@ -17,7 +17,7 @@ func init() {
 	svc = firehose.New(sess)
 }
 
-func BatchSend(record map[string]string){
+func BatchSend(record *GopherRecord) {
 	data, _ := json.Marshal(record)
 
 	params := &firehose.PutRecordInput{

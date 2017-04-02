@@ -1,6 +1,7 @@
 package main
 
 import (
+	"time"
 	"flag"
 	"sync"
 	"log"
@@ -11,6 +12,9 @@ var configfile string
 var cfg Config
 
 type GopherRecord struct {
+	Timestamp	time.Time		`json:"@timestamp"`
+	Data		map[string]string	`json:"message"`
+	Tags      	[]string               	`json:"tags,omitempty"`
 }
 
 func init() {
