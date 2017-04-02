@@ -1,0 +1,20 @@
+hash: 4fa99639b68408bce3ac454116af3833ce95367704bc011e772320ff53d91ebf
+updated: 2017-04-02T17:34:25.063339618+01:00
+imports:
+- name: github.com/BurntSushi/toml
+  version: b26d9c308763d68093482582cea63d69be07a0f0
+- name: github.com/hpcloud/tail
+  version: a30252cb686a21eb2d0b98132633053ec2f7f1e5
+  subpackages:
+  - '...'
+  - ratelimiter
+  - util
+  - watch
+  - winfile
+- name: github.com/vjeantet/grok
+  version: d73e972b60935c7fec0b4ffbc904ed39ecaf7efe
+- name: gopkg.in/fsnotify.v1
+  version: 7be54206639f256967dd82fa767397ba5f8f48f5
+- name: gopkg.in/tomb.v1
+  version: c131134a1947e9afd9cecfe11f4c6dff0732ae58
+testImports: []
