@@ -13,7 +13,7 @@ var cfg Config
 
 type GopherRecord struct {
 	Timestamp	time.Time		`json:"@timestamp"`
-	Data		map[string]string	`json:"message"`
+	Data		map[string]interface{}	`json:"message"`
 	Tags      	[]string               	`json:"tags,omitempty"`
 }
 
